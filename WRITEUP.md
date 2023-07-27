@@ -2,11 +2,15 @@
 
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
+I chose to deploy with an App Services for the following reasons:
+- We only have lightweight APIs
+- Flask is nativly supported by App Services
+- App Services is cheaper and scaling is not important for the use case
+- The deployment with App Services is easier, faster and azure handles more of the management
 
 ### Assess app changes that would change your decision.
 
-*Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+I would have taken a VM if
+- it would have been a big contract with more hardware power needed
+- we have multiple apps, for example for different departments or customer groups (with different programming languages and architectures)
+- dedicated servers for security reasons are necessary
